@@ -1,0 +1,27 @@
+#! /bin/sh
+if [ ! -e /oem/partybox_play.sh ]; then
+	echo "Maybe first init, make link /oem/partybox_app.sh fisrt!"
+	ln -s /usr/bin/partybox_play.sh /oem/partybox_play.sh
+fi
+chmod 777 /oem/partybox_play.sh
+/oem/partybox_play.sh &
+sync
+
+start() {
+	if [ ! -e /oem/partybox_app.sh ]; then
+		ln -s /usr/bin/partybox_app.sh /oem/partybox_app.sh
+	fi
+	chmod 777 /oem/partybox_app.sh
+	/oem/partybox_app.sh &
+}
+
+case "$1" in
+  start)
+	start
+	;;
+  *)
+	echo "Usage: $0 {start}"
+	exit 1
+esac
+
+exit $?
