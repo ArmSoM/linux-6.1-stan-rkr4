@@ -1,0 +1,79 @@
+Obtain the driver ko from the corresponding directory
+
+6.1 kernel base on:
+
+commit 641cd799d8d3a11b74c1e4e9f9be80431fb7e8fb
+Author: David Wu <david.wu@rock-chips.com>
+Date:   Wed Dec 6 20:39:37 2023 +0800
+
+    arm64: configs: rockchip_linux_defconfig: Make STMMAC_ETH to module
+
+    Signed-off-by: David Wu <david.wu@rock-chips.com>
+    Change-Id: I18ec3fa98276ec430fc50e267064e0d6737dc2fd
+
+commit 050908f8529c257e9f5d579efde1d70fe5bb85c0
+Author: ZhiZhan Chen <zhizhan.chen@rock-chips.com>
+Date:   Wed Feb 21 17:09:53 2024 +0800
+
+    patches-6.1.59-rt16.patch on rockchip base cbba86deb563899bf0e9e0b15cc8a41c4cc21bd2
+
+    Change-Id: Idd3098a283221a9edb7acad6ba095f226a92da00
+    Signed-off-by: ZhiZhan Chen <zhizhan.chen@rock-chips.com>
+
+commit c9345155ee28ce6168047ed91e414b2dad3de8c7
+Author: Liang Chen <cl@rock-chips.com>
+Date:   Tue Jul 4 11:47:16 2023 +0800
+
+    arm64: configs: optimize latency for PREEMPT_RT
+
+    Change-Id: I463d66d69d8ab45435511265d0b977040bc26dac
+    Signed-off-by: Liang Chen <cl@rock-chips.com>
+
+
+commit ba1c5ae47b7947058bfd885e2fbbb434690fe12a
+Author: Shunhua Lan <lsh@rock-chips.com>
+Date:   Fri Mar 1 18:10:54 2024 +0800
+
+    ASoC: rockchip: multi-dais: Add legacy_dai_naming flag
+    
+    Signed-off-by: Shunhua Lan <lsh@rock-chips.com>
+    Change-Id: Ia0ebb742dade8ecd3c7a0bae645cc1587e2e9a7e
+
+
+5.10 kernel base on:
+
+commit 66efa76b6a8ceb5c7f91c9d207621805414edaab
+Author: Liang Chen <cl@rock-chips.com>
+Date:   Tue Jul 4 11:47:16 2023 +0800
+
+    arm64: configs: optimize latency for PREEMPT_RT
+
+    Change-Id: I463d66d69d8ab45435511265d0b977040bc26dac
+    Signed-off-by: Liang Chen <cl@rock-chips.com>
+
+commit 943762a8a0bb082ce26c8a10c2e68a67ef848c0a
+Author: Liang Chen <cl@rock-chips.com>
+Date:   Tue Jul 4 11:46:06 2023 +0800
+
+    patch-5.10.180-rt89.patch: fix runtime error on rockchip
+
+    Change-Id: I437a4cbbbb00b08ed91efcd08625722ac84ac086
+    Signed-off-by: Liang Chen <cl@rock-chips.com>
+
+commit e84e1e0476b31a6a7fce466532e5f1a0013d3d1b
+Author: Liang Chen <cl@rock-chips.com>
+Date:   Thu Nov 23 19:47:03 2023 +0800
+
+    patch-5.10.180-rt89.patch on rockchip base 4ec930057599
+
+    Change-Id: I3ac1bccd0e1754f54945b4f9508de35274654ae0
+    Signed-off-by: Liang Chen <cl@rock-chips.com>
+
+commit 9b4205b38d4a835446ece378c344d0cae059c17f (rk/develop-5.10, m/master)
+Author: Nathan Chancellor <nathan@kernel.org>
+Date:   Wed Sep 28 13:19:21 2022 -0700
+
+    UPSTREAM: usb: gadget: uvc: Fix argument to sizeof() in uvc_register_video()
+
+    When building s390 allmodconfig after commit 9b91a6523078 ("usb: gadget:
+    uvc: increase worker prio to WQ_HIGHPRI"), the following error occurs:
