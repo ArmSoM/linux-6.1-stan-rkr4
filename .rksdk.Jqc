@@ -1,0 +1,46 @@
+  chip                   - choose chip
+  defconfig              - choose defconfig
+  config                 - modify SDK defconfig
+  print-parts            - print partitions
+  list-parts             - alias of print-parts
+  mod-parts              - interactive partition table modify
+  edit-parts             - edit raw partitions
+  misc                   - pack misc image
+  kernel-6.1             - build kernel 6.1
+  kernel                 - build kernel
+  recovery-kernel        - build kernel for recovery
+  modules                - build kernel modules
+  linux-headers          - build linux-headers
+  kernel-config          - modify kernel defconfig
+  kconfig                - alias of kernel-config
+  kernel-make            - run kernel make
+  kmake                  - alias of kernel-make
+  wifibt                 - build Wifi/BT
+  amp                    - build and pack amp system
+  buildroot-config       - modify buildroot defconfig
+  bconfig                - alias of buildroot-config
+  buildroot-make         - run buildroot make
+  bmake                  - alias of buildroot-make
+  rootfs                 - build default rootfs
+  buildroot              - build buildroot rootfs
+  yocto                  - build yocto rootfs
+  debian                 - build debian rootfs
+  recovery               - build recovery
+  security-createkeys    - create keys for security
+  security-misc          - build misc with system encryption key
+  security-ramboot       - build security ramboot
+  security-system        - build security system
+  loader                 - build loader (u-boot)
+  uboot                  - build u-boot
+  u-boot                 - alias of uboot
+  uefi                   - build uefi
+  extra-parts            - pack extra partition images
+  firmware               - pack and check firmwares
+  edit-package-file      - edit package-file
+  edit-ota-package-file  - edit package-file for OTA
+  updateimg              - build update image
+  ota-updateimg          - build update image for OTA
+  all                    - build images
+  release                - release images and build info
+  all-release            - build and release images
+  shell                  - setup a shell for developing
